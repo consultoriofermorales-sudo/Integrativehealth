@@ -52,7 +52,15 @@
             font-weight: 300;
             color: #495057;
             margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .header-text h3 {
+            font-size: 1.1em;
+            font-weight: 400;
+            color: #6c757d;
+            margin-top: 0;
             margin-bottom: 20px;
+            font-style: italic;
         }
         .intro-text {
             font-size: 1.1em;
@@ -107,6 +115,33 @@
             margin-top: 0;
             margin-bottom: 30px;
         }
+        .how-it-works-steps {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .how-it-works-step {
+            flex: 1;
+            min-width: 200px;
+        }
+        .how-it-works-step .step-number {
+            background-color: #007bff;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .how-it-works-step h3 {
+            margin-bottom: 10px;
+        }
         .testimonial-card {
             text-align: center;
             margin-bottom: 30px; 
@@ -128,6 +163,9 @@
         }
         .faq-item {
             margin-bottom: 20px;
+        }
+        .faq-item:last-child {
+            margin-bottom: 0;
         }
         .faq-item h3 {
             font-size: 1.2em;
@@ -169,21 +207,39 @@
                 <div class="header-text">
                     <h1>Choose Your Path to Wellness</h1>
                     <h2>with Fernando Morales, MD</h2>
+                    <h3>Universidad Autónoma de Chihuahua</h3>
                 </div>
             </div>
         </div>
 
         <p class="intro-text">
-            Welcome. You are one step away from beginning a truly personalized approach to your health.
+            Welcome. As a <strong>natively bilingual (English/Spanish)</strong> general practitioner, my mission is to empower patients who feel overlooked by conventional medicine. I partner with you to find the root cause of your health issues by providing the time and attention necessary to understand your unique story.
             <br><br>
-            As a <strong>natively bilingual (English/Spanish)</strong> general practitioner, my mission is to empower patients who feel overlooked by conventional medicine. I partner with you to find the root cause of your health issues by providing the time and attention necessary to understand your unique story.
-            <br><br>
-            Your personalized protocol is designed to be unique to you and may include targeted, <strong>low-carbohydrate nutrition plans</strong>, the principles of <strong>quantum biology</strong> (like grounding and light exposure), therapeutic exercise, <strong>adaptogens</strong>, and where appropriate, the strategic use of <strong>repurposed medications</strong>.
-            <br><br>
-            Below are three programs, each beginning with a 60-minute consultation, designed to provide the level of support you need to begin.
+            Your personalized protocol may include targeted, <strong>low-carbohydrate nutrition plans</strong>, the principles of <strong>quantum biology</strong>, therapeutic exercise, <strong>adaptogens</strong>, and where appropriate, the strategic use of <strong>repurposed medications</strong>.
         </p>
 
-        <div class="tiers">
+        <div class="section how-it-works">
+            <h2>Your Journey in 3 Simple Steps</h2>
+            <div class="how-it-works-steps">
+                <div class="how-it-works-step">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Program</h3>
+                    <p>Select the level of support that's right for you from the three options below.</p>
+                </div>
+                <div class="how-it-works-step">
+                    <div class="step-number">2</div>
+                    <h3>Book Your Consultation</h3>
+                    <p>Securely pay and schedule your 60-minute initial video consultation on the next page.</p>
+                </div>
+                <div class="how-it-works-step">
+                    <div class="step-number">3</div>
+                    <h3>Begin Your Protocol</h3>
+                    <p>Receive your welcome message, fill out your intake form, and begin your journey to wellness after our call.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tiers" style="margin-top: 40px;">
             <div class="tier">
                 <h2>Foundational Health Consultation</h2>
                 <div class="price">$195 <span>USD</span></div>
@@ -218,11 +274,11 @@
             </div>
             <div class="testimonial-card">
                 <p>"The foundational consultation gave me more clarity in 60 minutes than I've had in 6 years. The protocol was clear and easy to follow. I highly recommend this for anyone feeling stuck in their health journey."</p>
-                <div class="author">- Placeholder Name, Location</div>
+                <div class="author">- Elvira Castro, Chihuahua, Mexico.</div>
             </div>
              <div class="testimonial-card">
                 <p>"I was skeptical about the quantum biology aspect, but the simple changes Dr. Morales recommended made a huge difference in my sleep and overall vitality. This is the future of medicine."</p>
-                <div class="author">- Placeholder Name, Location</div>
+                <div class="author">- Gil Salinas, Arkansas, USA</div>
             </div>
         </div>
 
@@ -240,13 +296,18 @@
                 <h3>Who is this program NOT a good fit for?</h3>
                 <p>These programs are not intended to replace primary or emergency care. This approach is not for individuals looking for a "quick fix" or who are not ready to actively participate in their health journey by making meaningful lifestyle and diet changes. My role is to be your partner and guide, but your commitment is the key to success.</p>
             </div>
+            <div class="faq-item">
+                <h3>What is your rescheduling and cancellation policy?</h3>
+                <p>You can easily reschedule your appointment with at least 48 hours' notice using the link in your confirmation email. Cancellations made more than 48 hours in advance will receive a full refund. Cancellations within 48 hours are non-refundable.</p>
+            </div>
         </div>
 
         <div class="footer">
             <a href="https://www.youtube.com/@fernandomoralesMD" target="_blank" class="youtube-button">
                 Explore my YouTube Channel
             </a>
-            <p>© 2025 Fernando Morales, MD. All Rights Reserved.</p>
+            <p>Fernando Morales, MD | Licensed General Practitioner in Mexico<br>
+            © 2025 All Rights Reserved.</p>
         </div>
     </div>
 </body>
