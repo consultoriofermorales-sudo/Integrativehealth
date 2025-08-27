@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Consultation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+        }
+        .header {
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .tiers {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .tier {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 30px;
+            width: 260px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .tier:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+        }
+        .tier h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        .tier .price {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .tier .price span {
+            font-size: 0.5em;
+            font-weight: normal;
+            color: #666;
+        }
+        .tier .description {
+            color: #555;
+            flex-grow: 1;
+            margin-bottom: 25px;
+        }
+        .tier .tag {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .tier-button {
+            display: block;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .tier-button:hover {
+            background-color: #0056b3;
+        }
+        .tier.recommended {
+            border-color: #007bff;
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Confirm Your Consultation & Choose Your Program</h1>
+            <p>
+                Welcome. You are one step away from beginning a truly personalized approach to your health. Please select the level of physician support below that best fits your needs to schedule your 60-minute initial consultation.
+            </p>
+        </div>
+
+        <div class="tiers">
+            <div class="tier">
+                <h2>Foundational Health Consultation</h2>
+                <div class="price">$195 <span>USD</span></div>
+                <div class="description">The ideal first step to gain an expert understanding of your health and receive a clear, actionable protocol. Includes a 60-min consultation and 14-day messaging support.</div>
+                <a href="https://cal.com/drfernandomorales/foundational-health-consultation" class="tier-button">Book Now</a>
+            </div>
+
+            <div class="tier recommended">
+                <div class="tag">RECOMMENDED</div>
+                <h2>The 12-Week Integrative Program</h2>
+                <div class="price">$350 <span>USD</span></div>
+                <div class="description">Our signature program for those committed to lasting results with continuous physician support for 12 full weeks.</div>
+                <a href="https://cal.com/drfernandomorales/the-12-week-integrative-program" class="tier-button">Book Now</a>
+            </div>
+
+            <div class="tier">
+                <h2>The Concierge Health Program</h2>
+                <div class="price">$595 <span>USD</span></div>
+                <div class="description">The highest level of personalized care, including everything in the 12-week program PLUS three scheduled 30-min video follow-up calls.</div>
+                <a href="https://cal.com/drfernandomorales/the-concierge-health-program" class="tier-button">Book Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
