@@ -29,7 +29,7 @@
             align-items: center;
             gap: 30px;
             text-align: left;
-            flex-wrap: wrap; /* Stacks on mobile */
+            flex-wrap: wrap;
             justify-content: center;
         }
         .header-photo img {
@@ -93,7 +93,6 @@
         .tier-button:hover { background-color: #0056b3; }
         .tier.recommended { border-color: #007bff; border-width: 2px; }
         
-        /* New Sections Styling */
         .section {
             background: #fff;
             padding: 40px;
@@ -110,6 +109,10 @@
         }
         .testimonial-card {
             text-align: center;
+            margin-bottom: 30px; 
+        }
+        .testimonial-card:last-child {
+            margin-bottom: 0;
         }
         .testimonial-card p {
             font-style: italic;
@@ -138,12 +141,21 @@
             font-size: 0.9em;
             color: #6c757d;
         }
-        .footer a {
-            color: #007bff;
+        .youtube-button {
+            display: inline-block;
+            background-color: #fff;
+            color: #c4302b;
+            border: 1px solid #c4302b;
             text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.2s;
+            margin-bottom: 20px;
         }
-        .footer a:hover {
-            text-decoration: underline;
+        .youtube-button:hover {
+            background-color: #c4302b;
+            color: #fff;
         }
     </style>
 </head>
@@ -199,8 +211,16 @@
         <div class="section testimonials">
             <h2>What My Patients Are Saying</h2>
             <div class="testimonial-card">
-                 <p>"Working with Dr. Morales was the first time I felt a doctor truly listened. The 12-week program was transformative. My energy levels are back, my brain fog is gone, and I finally have a clear path forward for managing my autoimmune condition."</p>
+                <p>"Working with Dr. Morales was the first time I felt a doctor truly listened. The 12-week program was transformative. My energy levels are back, my brain fog is gone, and I finally have a clear path forward for managing my autoimmune condition."</p>
                 <div class="author">- Tania Samaniego, Chihuahua, Chih.</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"The foundational consultation gave me more clarity in 60 minutes than I've had in 6 years. The protocol was clear and easy to follow. I highly recommend this for anyone feeling stuck in their health journey."</p>
+                <div class="author">- Placeholder Name, Location</div>
+            </div>
+             <div class="testimonial-card">
+                <p>"I was skeptical about the quantum biology aspect, but the simple changes Dr. Morales recommended made a huge difference in my sleep and overall vitality. This is the future of medicine."</p>
+                <div class="author">- Placeholder Name, Location</div>
             </div>
         </div>
 
@@ -208,11 +228,11 @@
             <h2>Frequently Asked Questions</h2>
             <div class="faq-item">
                 <h3>What happens after I book and pay?</h3>
-                <p>You will immediately receive a confirmation email with a link to your secure video consultation.  I will also send a personal welcome message within 24 hours and a link so you can fill out your clinical history form.</p>
+                <p>You will immediately receive a confirmation email with a link to your secure video consultation. I will also send a personal welcome message within 24 hours and a link so you can fill out your clinical history form.</p>
             </div>
             <div class="faq-item">
                 <h3>What platforms do you use?</h3>
-                <p>All video consultations are conducted on Doxy.me, a secure and confidential telemedicine platform. Direct messaging support is provided through either Signal, WhatsApp, Telegram or SimpleX. </p>
+                <p>All video consultations are conducted on Doxy.me, a secure and confidential telemedicine platform. Direct messaging support is provided through either Signal, WhatsApp, Telegram or SimpleX.</p>
             </div>
              <div class="faq-item">
                 <h3>Who is this program NOT a good fit for?</h3>
@@ -221,12 +241,11 @@
         </div>
 
         <div class="footer">
-            <p>
-                <a href="https://www.youtube.com/@fernandomoralesMD" target="_blank">Explore my YouTube Channel</a> for more health insights.
-            </p>
+            <a href="https://www.youtube.com/@fernandomoralesMD" target="_blank" class="youtube-button">
+                Explore my YouTube Channel
+            </a>
             <p>© 2025 Fernando Morales, MD. All Rights Reserved.</p>
         </div>
     </div>
 </body>
 </html>
-
